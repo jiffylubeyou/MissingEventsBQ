@@ -63,9 +63,63 @@ def main(name):
 
     # Here is the logic for filtering out all the names that we don't care about
     dontcareSet = {
+        'page_view', # These are the enhanced measurements
+        'scroll',
+        'click',
+        'view_search_results',
+        'video_start',
+        'video_progress',
+        'video_complete',
+        'file_download',
+        'form_start',
+        'form_submit',
+        'ad_click', # These are the Automatically collected events
+        'ad_exposure',
+        'ad_impression',
+        'ad_query',
+        'ad_reward',
+        'adunit_exposure',
+        'app_clear_data',
+        'app_exception',
+        'app_remove',
+        'app_store_refund',
+        'app_store_subscription_cancel',
+        'app_store_subscription_convert',
+        'app_store_subscription_renew',
+        'app_update',
+        'click',
+        'dynamic_link_app_open',
+        'dynamic_link_app_update',
+        'dynamic_link_first_open',
+        'error',
+        'file_download',
+        'firebase_campaign',
+        'firebase_in_app_message_action',
+        'firebase_in_app_message_dismiss',
+        'firebase_in_app_message_impression',
+        'first_open',
+        'first_visit',
+        'form_start',
+        'form_submit',
+        'in_app_purchase',
+        'notification_dismiss',
+        'notification_foreground',
+        'notification_open',
+        'notification_receive',
+        'os_update',
         'page_view',
-        '',
+        'screen_view',
+        'scroll',
+        'session_start',
+        'user_engagement',
+        'video_complete',
+        'video_progress',
+        'video_start',
+        'view_search_results'
     }
+
+    # Confusing line below
+    difference = difference.difference(dontcareSet)
 
     if (len(difference) == 0):
         f.write("Couldn't find any events in Big Query that aren't in GTM")

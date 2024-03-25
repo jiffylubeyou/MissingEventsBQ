@@ -94,5 +94,8 @@
 }, {
   "event_name": "kenny_test",
   "keys": ["coupon", "currency", "payment_type"]
+}, {
+  "event_name": "kenny_test2",
+  "keys": ["coupon", "currency", "payment_type"]
 }
 ]

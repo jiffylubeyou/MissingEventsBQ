@@ -74,7 +74,7 @@
  [],
  False,
  False,
- 1711394175,
+ 1711407215,
  [('run.exe',
    'C:\\Users\\KennyStrong\\PycharmProjects\\MissingEventsBQ\\.venv\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
    'EXECUTABLE')],
