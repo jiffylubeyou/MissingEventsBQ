@@ -61,6 +61,12 @@ def main(name):
     # See how they differ (only things in GTM that aren't in BiqQuery)
     difference = bqEventNames.difference(gtmGA4TagEventNames)
 
+    # Here is the logic for filtering out all the names that we don't care about
+    dontcareSet = {
+        'page_view',
+        '',
+    }
+
     if (len(difference) == 0):
         f.write("Couldn't find any events in Big Query that aren't in GTM")
     else:
