@@ -1,0 +1,3 @@
+These are GA4 events in GTM that aren't in Big Query (at least didn't happen in the date range of the query)
+{'scroll', 'notification_foreground', 'os_update', 'screen_view', 'app_clear_data', 'notification_open', 'session_start', 'click', 'file_download', 'view_search_results', 'first_visit', 'ads_conversion_Sign_Up_1', 'first_open', 'firebase_campaign', 'app_remove', 'app_update', 'user_engagement'}
+
