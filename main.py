@@ -62,9 +62,9 @@ def main(name):
     difference = bqEventNames.difference(gtmGA4TagEventNames)
 
     if (len(difference) == 0):
-        f.write("Couldn't find any events in GTM that aren't in Big Query")
+        f.write("Couldn't find any events in Big Query that aren't in GTM")
     else:
-        f.write("These are GA4 events in GTM that aren't in Big Query (at least didn't happen in the date range of the query)\n")
+        f.write("These are events in Big Query that aren't in GTM as GA4 events (at least didn't happen in the date range of the query)\n")
         f.write(str(difference))
         f.write("\n\n")
 
